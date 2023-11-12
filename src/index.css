@@ -4,6 +4,14 @@
 
 @layer base { 
   body { 
-    @apply font-primary antialiased;
+    @apply font-primary antialiased min-h-screen bg-cyan-800;
+  }
+
+  #root{
+    @apply h-full;
+  }
+
+  *{
+   @apply outline-none focus-visible:ring-1 focus-visible:ring-blue-100; 
   }
 }

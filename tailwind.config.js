@@ -2,6 +2,14 @@
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '864px',
+      // lg: '1024px',
+      // xl: '1280px',
+      // '2xl': '1440px',
+    },
+
     extend: {
       colors: {
         blue: {
@@ -30,5 +38,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
